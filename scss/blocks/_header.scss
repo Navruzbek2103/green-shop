@@ -1,0 +1,337 @@
+.header {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__link {
+
+      &__img {
+        width: 150px;
+        height: 34px;
+      }
+    }
+
+    &__list {
+      width: 351px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__item {
+      border-bottom: 3px solid transparent;
+      transition: all 1s ease;
+
+      &__link {
+        display: inline-block;
+        padding: 25px 0;
+        color: #3D3D3D;
+        font-family: "Cera Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+
+      &:nth-child(1) {
+        .nav__item__link {
+          font-weight: 700;
+        }
+
+        font-weight: 700;
+        border-bottom: 3px solid #46A358;
+
+
+      }
+
+      &:hover {
+        .nav__item__link {
+          font-weight: 700;
+        }
+
+        border-bottom: 3px solid #46A358;
+      }
+    }
+
+    &__searchBar {
+      width: 210px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__btn:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        color: #FFF;
+        padding: 8px 17px;
+        font-family: "Cera Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 6px;
+        background: #46A358;
+      }
+
+      &__btn:nth-child(2) {
+        position: relative;
+      }
+
+      &__btn:nth-child(2)::after {
+        position: absolute;
+        top: 0;
+        left: 65%;
+        border: 2px solid white;
+        content: "6";
+        width: 14px;
+        height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        border-radius: 50%;
+        background-color: #46A358;
+        font-family: Cera Pro;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+.burger {
+  display: none;
+}
+
+// 992px
+@media only screen and (max-width: 992px) {
+  .header {
+    .nav {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+
+      // &__link {
+
+      //   &__img {
+      //     width: 150px;
+      //     height: 34px;
+      //   }
+      // }
+
+      &__list {
+        width: 291px;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+      }
+
+      // &__item {
+      // border-bottom: 3px solid transparent;
+      // transition: all 1s ease;
+
+      // &__link {
+      //   display: inline-block;
+      //   padding: 25px 0;
+      //   color: #3D3D3D;
+      //   font-family: "Cera Pro";
+      //   font-size: 16px;
+      //   font-style: normal;
+      //   font-weight: 400;
+      //   line-height: normal;
+      // }
+
+      // &:nth-child(1) {
+      //   .nav__item__link {
+      //     font-weight: 700;
+      //   }
+
+      //   font-weight: 700;
+      //   border-bottom: 3px solid #46A358;
+
+
+      // }
+
+      // &:hover {
+      //   .nav__item__link {
+      //     font-weight: 700;
+      //   }
+
+      //   border-bottom: 3px solid #46A358;
+      // }
+      // }
+
+      &__searchBar {
+        width: 200px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+
+        // &__btn:last-child {
+        //   display: flex;
+        //   align-items: center;
+        //   justify-content: space-between;
+        //   gap: 4px;
+        //   color: #FFF;
+        //   padding: 8px 17px;
+        //   font-family: "Cera Pro";
+        //   font-size: 16px;
+        //   font-style: normal;
+        //   font-weight: 500;
+        //   line-height: normal;
+        //   border-radius: 6px;
+        //   background: #46A358;
+        // }
+
+        // &__btn:nth-child(2) {
+        //   position: relative;
+        // }
+
+        // &__btn:nth-child(2)::after {
+        //   position: absolute;
+        //   top: 0;
+        //   left: 65%;
+        //   border: 2px solid white;
+        //   content: "6";
+        //   width: 14px;
+        //   height: 14px;
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   color: #FFF;
+        //   border-radius: 50%;
+        //   background-color: #46A358;
+        //   font-family: Cera Pro;
+        //   font-size: 10px;
+        //   font-style: normal;
+        //   font-weight: 500;
+        //   line-height: normal;
+        // }
+      }
+    }
+  }
+}
+
+// 768px
+@media only screen and (max-width: 768px) {
+  .header {
+    .nav {
+      padding: 10px;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+
+      // &__link {
+
+      //   &__img {
+      //     width: 150px;
+      //     height: 34px;
+      //   }
+      // }
+
+      &__list {
+        display: none;
+        // width: 291px;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+      }
+
+      // &__item {
+      // border-bottom: 3px solid transparent;
+      // transition: all 1s ease;
+
+      // &__link {
+      //   display: inline-block;
+      //   padding: 25px 0;
+      //   color: #3D3D3D;
+      //   font-family: "Cera Pro";
+      //   font-size: 16px;
+      //   font-style: normal;
+      //   font-weight: 400;
+      //   line-height: normal;
+      // }
+
+      // &:nth-child(1) {
+      //   .nav__item__link {
+      //     font-weight: 700;
+      //   }
+
+      //   font-weight: 700;
+      //   border-bottom: 3px solid #46A358;
+
+
+      // }
+
+      // &:hover {
+      //   .nav__item__link {
+      //     font-weight: 700;
+      //   }
+
+      //   border-bottom: 3px solid #46A358;
+      // }
+      // }
+
+      &__searchBar {
+        width: 200px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+
+        // &__btn:last-child {
+        //   display: flex;
+        //   align-items: center;
+        //   justify-content: space-between;
+        //   gap: 4px;
+        //   color: #FFF;
+        //   padding: 8px 17px;
+        //   font-family: "Cera Pro";
+        //   font-size: 16px;
+        //   font-style: normal;
+        //   font-weight: 500;
+        //   line-height: normal;
+        //   border-radius: 6px;
+        //   background: #46A358;
+        // }
+
+        // &__btn:nth-child(2) {
+        //   position: relative;
+        // }
+
+        // &__btn:nth-child(2)::after {
+        //   position: absolute;
+        //   top: 0;
+        //   left: 65%;
+        //   border: 2px solid white;
+        //   content: "6";
+        //   width: 14px;
+        //   height: 14px;
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   color: #FFF;
+        //   border-radius: 50%;
+        //   background-color: #46A358;
+        //   font-family: Cera Pro;
+        //   font-size: 10px;
+        //   font-style: normal;
+        //   font-weight: 500;
+        //   line-height: normal;
+        // }
+      }
+    }
+  }
+
+  .burger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #3D3D3D;
+  }
+}
